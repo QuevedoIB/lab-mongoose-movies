@@ -1,0 +1,18 @@
+<h2>Add celebrity</h2>
+<form action="/" method="POST">
+  <label for="name">Name: </label>
+  <input type="text" name="name" id="name" value='{{name}}'>
+
+  <label for="occupation">Occupation: </label>
+  <input type="text" name="occupation" id="occupation" value='{{occupation}}'>
+
+  <label for="phrase">Special Phrase: </label>
+  <input type="text" name="catchPhrase" id="phrase" value='{{catchPhrase}}'>
+
+  <input type="hidden" name="_id" value="{{_id}}">
+  {{#if name}}
+  <button type="submit">Edit celebirty</button>
+  {{else}}
+  <button type="submit">Save celebirty</button>
+  {{/if}}
+</form>

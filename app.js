@@ -5,8 +5,9 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
-require('dotenv').config()
+require('dotenv').config();
 const indexRouter = require('./routes/index');
+const celebritiesRouter = require('./routes/celebrities');
 
 const app = express();
 
@@ -27,6 +28,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/', celebritiesRouter);
 
 // -- 404 and error handler
 

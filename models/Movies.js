@@ -7,21 +7,19 @@ mongoose.connect('mongodb://localhost/movies', {
   reconnectTries: Number.MAX_VALUE
 });
 
-const celebritiesSchema = new Schema({
-  name: {
+const moviesSchema = new Schema({
+  title: {
     type: String,
     required: true
   },
-  occupation: {
-    type: String,
-    default: 'unknown'
+  genre: {
+    type: String
   },
-  catchPhrase: {
-    type: String,
-    required: true
+  plot: {
+    type: String
   }
 });
 
-const Celebrities = mongoose.model('celebrities', celebritiesSchema);
+const Movies = mongoose.model('movies', moviesSchema);
 
-module.exports = Celebrities;
+module.exports = Movies;
