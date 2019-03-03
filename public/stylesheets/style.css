@@ -1,8 +1,55 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+  margin: 0;
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
 a {
-  color: #00B7FF;
+  color: rgb(45, 47, 48);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+article {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.index-box {
+  background-color: rgb(247, 233, 216);
+  border: 1px solid black;
+  box-shadow: 0px 3px 5px rgb(192, 190, 190), 0px -3px 5px rgb(192, 190, 190);
+}
+
+.index-box a {
+  margin: 20px;
+}
+
+.land-page {
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+}
+
+.form-new {
+  margin-bottom: 40px;
 }

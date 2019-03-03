@@ -19,7 +19,7 @@ const moviesData = require('../bin/movies-seeds');
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'CeleMovies' });
 });
 
 module.exports = router;

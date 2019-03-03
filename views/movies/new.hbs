@@ -1,5 +1,5 @@
 <h2>Add movie</h2>
-<form action="/movies/new" method="POST">
+<form action="/movies/new" method="POST" class="form-new">
   <label for="title">Title: </label>
   <input type="text" name="title" id="title" value='{{title}}'>
 
@@ -16,3 +16,4 @@
   <button type="submit">Save Movie</button>
   {{/if}}
 </form>
+<a href="/">Back to Menu</a>
