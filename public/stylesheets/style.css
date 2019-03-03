@@ -53,3 +53,21 @@ article {
 .form-new {
   margin-bottom: 40px;
 }
+
+.container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.container-spaced {
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.container-spaced a{
+  margin: 5px 0;
+}
